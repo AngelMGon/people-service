@@ -66,7 +66,7 @@ spec:
 		stage('Build Image and push'){			
 			steps {		
 				container('docker') {		
-		    		withDockerRegistry(credentialsId: 'ocir-credentials', url: "https://${ocir}") {
+		    		withDockerRegistry(credentialsId: 'ocir-credentials2', url: "https://${ocir}") {
 					      sh """				           
 				            docker build -t ${imageTag} .
 				            docker push ${imageTag}

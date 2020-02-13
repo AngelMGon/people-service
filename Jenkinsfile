@@ -78,7 +78,7 @@ spec:
 		}
 		stage('Deploy To Kubernetes'){
 			environment { 
-        KUBECONFIG = credentials('kube-credentials') 
+        KUBECONFIG = credentials('oci-kubernetes2') 
       }
      
 			steps {		
